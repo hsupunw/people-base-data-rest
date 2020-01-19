@@ -1,5 +1,7 @@
 # Project people-base-data-rest
-- This is a sample sapring-boot based REST application which shows main crud operations in person entities that is implemented with spring-data-rest 
+- This is a sample sapring-boot based REST application which shows main crud operations in person entities. 
+- It uses spring-data-rest for web layer.
+- Also spring-data-jpa for persistence layer with h2 in memory database.
 - More over it is protected by basic authentication supported by spring-security.
 - It additonally, provides related hateos navigation links for each endpoint response.
 
