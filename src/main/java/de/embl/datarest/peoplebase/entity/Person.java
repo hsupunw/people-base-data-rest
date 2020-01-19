@@ -3,6 +3,7 @@ package de.embl.datarest.peoplebase.entity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import de.embl.datarest.peoplebase.constants.ExampleValues;
 import de.embl.datarest.peoplebase.converter.HobbyConverter;
+import de.embl.datarest.peoplebase.exception.MandatoryFieldException;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -42,7 +43,10 @@ public class Person {
     private Collection<String> hobby;
 
     @PrePersist
-    public void setId() {
+    public void validateAndSetId() {
+        if (firstName == null || firstName.isEmpty()) {
+            throw new MandatoryFieldException("first name can't be empty");
+        }
         if (id == null || id.isEmpty()) {
             this.id = UUID.randomUUID().toString();
         }
