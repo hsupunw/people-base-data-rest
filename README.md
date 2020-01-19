@@ -19,7 +19,7 @@ mvn clean install
 - Find the executable .jar at */people-base-data-rest/target/
 
 ## Test without installing
-- Alternately you can download the executable .jar file directly from *******
+- Alternately you can download the executable .jar file directly from https://drive.google.com/open?id=1TV6aLCT8P9Upgl0JSBe5h-CHjXZ-CPfK
 
 ## Run
 - With the executable .jar made with the previous step, you can run the application by 
