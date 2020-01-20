@@ -86,6 +86,3 @@ command.
     
 ## Front End client
 - A front end client using angular 7 is developed for ease of use. Please find it from https://github.com/hsupunw/people-client
-
-## Alternative Implementation with spring-data-rest
-- An alternative implementation with spring-mvc (fully working with above angular front end) can be found from https://github.com/hsupunw/people-base
